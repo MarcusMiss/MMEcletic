@@ -1,0 +1,57 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "error.invalidCloseToken" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "“%1$@“ ist kein gültiges Endsymbol für eine Substituierung."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "“%1$@“ not a valid closing symbol for substitution."
+          }
+        }
+      }
+    },
+    "error.invalidOpenToken" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "“%1$@“ ist kein gültiges Startsymbol für eine Substituierung."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "“%1$@“ not a valid opening symbol for substitution."
+          }
+        }
+      }
+    },
+    "error.unknownSymbol" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Der Wert “%1$@“ im Ausdruck “%2$@“ kann nicht ersetzt werden."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Unable to resolve value for “%1$@“ in “%2$@“."
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}
