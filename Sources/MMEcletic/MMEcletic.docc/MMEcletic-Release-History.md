@@ -11,9 +11,9 @@ Overview of MMEcletic-releases. See what is new and what did change.
 
 | Release                                          | Date       | Comment                                                           |
 |--------------------------------------------------|------------|-------------------------------------------------------------------| 
-| <doc:MMEcletic-Release-History#Release-1.0.0>    | YYYY-MM-DD | First release.                                                    |
+| <doc:MMEcletic-Release-History#Release-1.0.0>    | 2025-08-21 | First release.                                                    |
 
-Date is in format _YYYY-MM-DD_.
+Date is in format _YYYY-MM-DD_ (Year-Month-Day).
 
 ### Release 1.0.0
 
