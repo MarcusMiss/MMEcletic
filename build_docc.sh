@@ -8,7 +8,7 @@ xcrun xcodebuild docbuild \
 xcrun docc process-archive transform-for-static-hosting \
     "$PWD/.derivedData/Build/Products/Debug-iphonesimulator/MMEcletic.doccarchive" \
     --output-path "docc" \
-    --hosting-base-path "" # "https://marcusmiss.github.io/mmecletic"
+    --hosting-base-path "https://marcusmiss.github.io/mmecletic"
 
 echo '<html><body><script>window.location.href += "/documentation/mmecletic"</script></body></html>' > docc/index.html
 
