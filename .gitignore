@@ -9,6 +9,9 @@ DerivedData/
 build/
 .build/
 
+.docs/
+.derivedData/
+
 /Packages
 #.swiftpm
 
