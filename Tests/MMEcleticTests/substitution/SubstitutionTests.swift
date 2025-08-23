@@ -15,21 +15,20 @@ class SubstitutionTests {
         let error1: SubstitutionError? = #expect(throws: SubstitutionError.self) {
             try Substitution.validateSequenceTokens("", "x")
         }
-        print("\(String(describing: error1))")
-        // TODO : ASSERTION
+        print("01:\(String(describing: error1?.localizedDescription))")
+        #expect(error1?.localizedDescription == "““ not a valid opening symbol for substitution.")
 
         let error2: SubstitutionError? = #expect(throws: SubstitutionError.self) {
             try Substitution.validateSequenceTokens("x", "")
         }
-        print("\(String(describing: error2))")
-        // TODO : ASSERTION
+        print("02:\(String(describing: error2?.localizedDescription))")
+        #expect(error2?.localizedDescription == "““ not a valid closing symbol for substitution.")
 
         let error3: SubstitutionError? = #expect(throws: SubstitutionError.self) {
             try Substitution.validateSequenceTokens("x", "x")
         }
-        print("\(String(describing: error3))")
-        // TODO : ASSERTION
-
+        print("03:\(String(describing: error3?.localizedDescription))")
+        #expect(error3?.localizedDescription == "“x“ not a valid closing symbol for substitution.")
     }
 
     @Test("Testing of()-factories")
