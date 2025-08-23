@@ -4,12 +4,12 @@
       "id" : "391ABA53-7C86-415E-9017-C41039E071F5",
       "name" : "Test Scheme Action",
       "options" : {
-
+        "language" : "en"
       }
     }
   ],
   "defaultOptions" : {
-
+    "language" : "en"
   },
   "testTargets" : [
     {
