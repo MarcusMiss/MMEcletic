@@ -2,9 +2,6 @@
 //  DateFormatter+FormatTests.swift
 //  MMEcletic
 //
-//  Created by Marcus on 23.08.25.
-//
-
 
 import Foundation
 import Testing
