@@ -8,7 +8,7 @@ import Testing
 @testable import MMEcletic
 
 @Suite("Extension Double")
-class DoubleTests {
+class DoubleConverterTests {
 
     @Test("Check toDecimal()")
     func toDecimal() async throws {

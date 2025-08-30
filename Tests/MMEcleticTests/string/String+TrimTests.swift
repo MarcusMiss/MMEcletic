@@ -7,7 +7,7 @@ import Foundation
 import Testing
 @testable import MMEcletic
 
-@Suite("Extension String (Trim))")
+@Suite("Extension String (Trim)")
 class StringTrimExtensionTests {
 
     @Test("Validate trim(), trimLeft(), trimRight()")

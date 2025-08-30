@@ -11,10 +11,19 @@ Overview of MMEcletic-releases. See what is new and what did change.
 
 | Release                                          | Date       | Comment                                                           |
 |--------------------------------------------------|------------|-------------------------------------------------------------------| 
+| <doc:MMEcletic-Release-History#Release-1.2.0>    | 2025-08-30 | Enhancements used by MMExpression                                 |
 | <doc:MMEcletic-Release-History#Release-1.1.0>    | 2025-08-23 | Second release.                                                   |
 | <doc:MMEcletic-Release-History#Release-1.0.0>    | 2025-08-21 | First release.                                                    |
 
 Date is in format _YYYY-MM-DD_ (Year-Month-Day).
+
+### Release 1.2.0
+
+Added extensions for:
+
+- ``MMEcletic/Swift/Bool``
+- ``MMEcletic/Swift/String``
+- `signum` for ``MMEcletic/Swift/Float``, ``MMEcletic/Swift/Double`` and ``MMEcletic/Foundation/Decimal``
 
 ### Release 1.1.0
 
