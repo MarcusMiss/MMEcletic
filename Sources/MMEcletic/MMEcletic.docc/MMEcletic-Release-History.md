@@ -11,8 +11,8 @@ Overview of MMEcletic-releases. See what is new and what did change.
 
 | Release                                          | Date       | Comment                                                           |
 |--------------------------------------------------|------------|-------------------------------------------------------------------| 
-| <doc:MMEcletic-Release-History#Release-1.3.0>    | 2025-mm-dd | TODO                                 |
-| <doc:MMEcletic-Release-History#Release-1.2.0>    | 2025-08-30 | Enhancements used by MMExpression                                 |
+| <doc:MMEcletic-Release-History#Release-1.3.0>    | 2025-09-05 | Small enhancements (for MMExpressionSolver)                       |
+| <doc:MMEcletic-Release-History#Release-1.2.0>    | 2025-08-30 | Enhancements used by MMExpressionSolver                           |
 | <doc:MMEcletic-Release-History#Release-1.1.0>    | 2025-08-23 | Second release.                                                   |
 | <doc:MMEcletic-Release-History#Release-1.0.0>    | 2025-08-21 | First release.                                                    |
 
