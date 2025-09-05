@@ -47,6 +47,14 @@ class DateModifierTests {
         let d4: Date = d0.add(seconds: 1)
         print("d4: \(df.string(from: d4))")
         #expect((df.string(from: d4) == "2025-09-05T12:00:01.000+0200") == true)
+        // years
+        let d5: Date = d0.add(years: 1)
+        print("d5: \(df.string(from: d5))")
+        #expect((df.string(from: d5) == "2026-09-05T12:00:00.000+0200") == true)
+        // months
+        let d6: Date = d0.add(months: 1)
+        print("d6: \(df.string(from: d5))")
+        #expect((df.string(from: d6) == "2025-10-05T12:00:00.000+0200") == true)
     }
 
     @Test("Check add()")
@@ -71,6 +79,14 @@ class DateModifierTests {
         let d4: Date = d0.subtract(seconds: 1)
         print("d4: \(df.string(from: d4))")
         #expect((df.string(from: d4) == "2025-09-05T11:59:59.000+0200") == true)
+        // years
+        let d5: Date = d0.subtract(years: 1)
+        print("d5: \(df.string(from: d5))")
+        #expect((df.string(from: d5) == "2024-09-05T12:00:00.000+0200") == true)
+        // months
+        let d6: Date = d0.subtract(months: 1)
+        print("d6: \(df.string(from: d5))")
+        #expect((df.string(from: d6) == "2025-08-05T12:00:00.000+0200") == true)
     }
 
 }

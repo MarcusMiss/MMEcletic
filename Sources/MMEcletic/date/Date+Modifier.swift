@@ -41,59 +41,93 @@ public extension Date {
         return Calendar.current.date(from: dateComponents)!
     }
 
+    /// Add `years` to date.
+    /// - Parameter years: years years to add
+    /// - Returns: resulting date
+    func add(years: Int) -> Date {
+        let iso = Calendar(identifier: .iso8601)
+        return iso.date(byAdding: DateComponents(year: years), to: self)!
+    }
+
+    /// Add `months` to date.
+    /// - Parameter months: months to add
+    /// - Returns: resulting date
+    func add(months: Int) -> Date {
+        let iso = Calendar(identifier: .iso8601)
+        return iso.date(byAdding: DateComponents(month: months), to: self)!
+    }
+
     /// Add `days` to date.
     /// - Parameter days: days to add
     /// - Returns: resulting date
-    func add(days: Double) -> Date {
-        return self.addingTimeInterval(days * 60.0 * 60.0 * 24.0)
+    func add(days: Int) -> Date {
+        let iso = Calendar(identifier: .iso8601)
+        return iso.date(byAdding: DateComponents(day: days), to: self)!
     }
 
     /// Add `hours` to date.
     /// - Parameter hours: days to add
     /// - Returns: resulting date
-    func add(hours: Double) -> Date {
+    func add(hours: TimeInterval) -> Date {
         return self.addingTimeInterval(hours * 60.0 * 60.0)
     }
 
     /// Add `minutes` to date.
     /// - Parameter minutes: days to add
     /// - Returns: resulting date
-    func add(minutes: Double) -> Date {
+    func add(minutes: TimeInterval) -> Date {
         return self.addingTimeInterval(minutes * 60.0)
     }
 
     /// Add `seconds` o date.
     /// - Parameter seconds: days to add
     /// - Returns: resulting date
-    func add(seconds: Double) -> Date {
+    func add(seconds: TimeInterval) -> Date {
         return self.addingTimeInterval(seconds)
     }
 
-    /// Remove `days` from date.
-    /// - Parameter days: days to add
+    /// Remove `years` from date.
+    /// - Parameter years: years years to remove
     /// - Returns: resulting date
-    func subtract(days: Double) -> Date {
-        return self.addingTimeInterval(-(days * 60.0 * 60.0 * 24.0))
+    func subtract(years: Int) -> Date {
+        let iso = Calendar(identifier: .iso8601)
+        return iso.date(byAdding: DateComponents(year: -years), to: self)!
+    }
+
+    /// Remove `months` to date.
+    /// - Parameter months: months to remove
+    /// - Returns: resulting date
+    func subtract(months: Int) -> Date {
+        let iso = Calendar(identifier: .iso8601)
+        return iso.date(byAdding: DateComponents(month: -months), to: self)!
+    }
+
+    /// Remove `days` from date.
+    /// - Parameter days: days to remove
+    /// - Returns: resulting date
+    func subtract(days: Int) -> Date {
+        let iso = Calendar(identifier: .iso8601)
+        return iso.date(byAdding: DateComponents(day: -days), to: self)!
     }
 
     /// Remove `hours` from date.
-    /// - Parameter hours: days to add
+    /// - Parameter hours: days to remove
     /// - Returns: resulting date
-    func subtract(hours: Double) -> Date {
+    func subtract(hours: TimeInterval) -> Date {
         return self.addingTimeInterval(-(hours * 60.0 * 60.0))
     }
 
     /// Remove `minutes` from date.
-    /// - Parameter minutes: days to add
+    /// - Parameter minutes: days to remove
     /// - Returns: resulting date
-    func subtract(minutes: Double) -> Date {
+    func subtract(minutes: TimeInterval) -> Date {
         return self.addingTimeInterval(-(minutes * 60.0))
     }
 
     /// Remove `seconds` from date.
-    /// - Parameter seconds: days to add
+    /// - Parameter seconds: days to remove
     /// - Returns: resulting date
-    func subtract(seconds: Double) -> Date {
+    func subtract(seconds: TimeInterval) -> Date {
         return self.addingTimeInterval(-seconds)
     }
 
