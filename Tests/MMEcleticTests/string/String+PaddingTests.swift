@@ -15,6 +15,7 @@ class StringPaddingExtensionTests {
         #expect(("Lorem".padLeft(10) == "     Lorem") == true)
         #expect(("Lorem".padLeft(10, withPad: "*") == "*****Lorem") == true)
         #expect(("Lorem".padLeft(5, withPad: "*") == "Lorem") == true)
+        #expect(("LoremIpsum".padLeft(5, withPad: "*") == "LoremIpsum") == true)
     }
 
     @Test("Validate padRight()")
@@ -22,6 +23,7 @@ class StringPaddingExtensionTests {
         #expect(("Lorem".padRight(10) == "Lorem     ") == true)
         #expect(("Lorem".padRight(10, withPad: "*") == "Lorem*****") == true)
         #expect(("Lorem".padRight(5, withPad: "*") == "Lorem") == true)
+        #expect(("LoremIpsum".padRight(5, withPad: "*") == "LoremIpsum") == true)
     }
 
 }

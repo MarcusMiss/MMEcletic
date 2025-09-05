@@ -6,6 +6,40 @@
 import Foundation
 
 public extension Date {
+    
+    /// Creates a `Date`.
+    /// - Parameters:
+    ///   - year: year
+    ///   - month: month
+    ///   - day: day
+    /// - Returns: new `Date`
+    static func create(year: Int, month: Int, day: Int) -> Date {
+        var dateComponents = DateComponents()
+        dateComponents.year = year
+        dateComponents.month = month
+        dateComponents.day = day
+        return Calendar.current.date(from: dateComponents)!
+    }
+    
+    /// Creates a `Date`.
+    /// - Parameters:
+    ///   - year: year
+    ///   - month: month
+    ///   - day: day
+    ///   - hour: hour
+    ///   - minute: minute
+    ///   - second: second
+    /// - Returns: new `Date`
+    static func create(year: Int, month: Int, day: Int, hour: Int, minute: Int, second: Int) -> Date {
+        var dateComponents = DateComponents()
+        dateComponents.year = year
+        dateComponents.month = month
+        dateComponents.day = day
+        dateComponents.hour = hour
+        dateComponents.minute = minute
+        dateComponents.second = second
+        return Calendar.current.date(from: dateComponents)!
+    }
 
     /// Add `days` to date.
     /// - Parameter days: days to add
