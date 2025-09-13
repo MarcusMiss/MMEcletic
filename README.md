@@ -6,3 +6,4 @@
 
 A small Swift-framework to ease some coding-tasks.
 
+[Docc-documentation](https://marcusmiss.github.io/MMEcletic/documentation/mmecletic/) is included.
